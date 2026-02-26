@@ -74,7 +74,7 @@ public class TokenService {
     }
 
     private UserDetails getUserDetailsFromToken(String token)  {
-        if (token.isBlank()) {
+        if (token == null || token.isBlank()) {
             return null;
         }
 
